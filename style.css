@@ -1,0 +1,202 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f1f3;
+  -webkit-box-shadow: 0 6px 12px rgba(109, 111, 117, 0.2);
+          box-shadow: 0 6px 12px rgba(109, 111, 117, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3867d6;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 3px 12px rgba(56, 103, 214, 0.85);
+          box-shadow: 0 3px 12px rgba(56, 103, 214, 0.85);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.data-holder {
+  position: relative;
+  width: 960px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: rgba(56, 103, 214, 0.1);
+  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-holder__nav {
+  display: inline-block;
+  width: auto;
+  padding: 12px 22px;
+  background-color: #3867d6;
+  -webkit-box-shadow: 0 4px 8px rgba(56, 103, 214, 0.5);
+          box-shadow: 0 4px 8px rgba(56, 103, 214, 0.5);
+  border-radius: 6px 0 6px 0px;
+  color: #fff;
+}
+
+.data-holder__nav h1 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.data-holder__filter {
+  position: relative;
+  padding: 12px 16px;
+}
+
+.data-holder__filter input, .data-holder__filter select {
+  padding: 3px;
+  border: 2px solid #ddd;
+}
+
+.data-holder__filter .filter-element {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.data-holder__filter .filter-element:nth-child(1), .data-holder__filter .filter-element:nth-last-child(1) {
+  margin: 0;
+}
+
+.data-holder__filter .filter-element label {
+  display: block;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.data-holder__filter button {
+  cursor: pointer;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 12px;
+  top: 0%;
+  padding: 5px 10px;
+  background-color: #2d98da;
+  border-radius: 3px;
+  -webkit-transition: .33s all ease-in-out;
+  transition: .33s all ease-in-out;
+  border: none;
+  -webkit-box-shadow: 0 3px 8px rgba(45, 152, 218, 0.5);
+          box-shadow: 0 3px 8px rgba(45, 152, 218, 0.5);
+  color: #eee;
+  font-weight: 400;
+  letter-spacing: .25px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.data-holder__filter button img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.data-holder__filter button:hover {
+  background-color: #3867d6;
+}
+
+.data-holder__info {
+  background-color: #3867d613;
+  padding: 12px 16px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.085);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.085);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data-holder__info span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.data-holder__info img {
+  width: 40px;
+}
+
+.data-holder__info p {
+  color: rgba(116, 117, 109, 0.774);
+  background-color: rgba(181, 235, 34, 0.15);
+  padding: 6px;
+  border-radius: 0px 6px 6px 0px;
+  font-weight: bold;
+  margin-left: 30px;
+  border-left: 4px solid #ffE01b;
+  padding-left: 10px;
+  line-height: 155%;
+}
+
+.data-holder__info p b {
+  color: #111;
+}
+
+.data-holder__data-part {
+  overflow: scroll;
+  height: 100%;
+  padding: 20px 16px;
+}
+
+.data-holder__data-part ul {
+  text-align: center;
+}
+
+.data-holder__data-part li {
+  list-style: none;
+}
+
+.data-holder__data-part .table-titles span {
+  color: #fff;
+  background-color: #3867d6 !important;
+  border: none !important;
+  font-weight: bold;
+}
+
+.data-holder__data-part span {
+  text-align: left;
+  display: inline-block;
+  padding: 8px 12px;
+  width: 220px;
+  border: 1px solid #ccc;
+  color: #222;
+}
+
+.data-holder__data-part span:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.data-holder__data-part span:nth-child(even) {
+  background-color: #f1f1f1;
+}
+/*# sourceMappingURL=style.css.map */

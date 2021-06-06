@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f0f1f3; 
+    box-shadow: 0 6px 12px rgba(109, 111, 117, 0.2);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(56, 103, 214); 
+    border-radius: 2px;
+    box-shadow: 0 3px 12px rgba(56,103,214,.85);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.data-holder {
+    position: relative;
+    width: 960px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: rgba(56, 103, 214, 0.1);
+    box-shadow: 0 3px 12px rgba(0,0,0,.25);
+    border-radius: 8px;
+    overflow: hidden;
+    &__nav {
+        display: inline-block;
+        width: auto;
+        padding: 12px 22px;
+        background-color: #3867d6;
+        box-shadow: 0 4px 8px rgba(56, 103, 214, .5);
+        border-radius: 6px 0 6px 0px;
+        color: #fff;
+        h1 {
+            font-weight: 300;
+            font-size: 18px;
+        }
+    }
+    &__filter {
+        position: relative;
+        //background-color: rgba(56, 103, 214, 0.1);
+        padding: 12px 16px;
+        //box-shadow: 0 2px 4px rgba(0,0,0,.05);
+        input, select {
+            padding: 3px;
+            border: 2px solid #ddd;
+        }
+        .filter-element {
+            display: inline-block;
+            &:nth-child(1), &:nth-last-child(1) {
+                margin: 0;
+            }
+            margin: 0 5px;
+            label {
+                display: block;
+                font-size: 14px;
+                color: #444;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+        }
+
+        button {
+            cursor: pointer;
+            position: absolute;
+            display: flex;
+            right: 12px;
+            top: 0%;
+            padding: 5px 10px;
+            background-color: #2d98da;
+            border-radius: 3px;
+            transition: .33s all ease-in-out;
+            border: none;
+            box-shadow: 0 3px 8px rgba(45, 152, 218, .5);
+            color: #eee;
+            font-weight: 400;
+            letter-spacing: .25px;
+            font-size: 14px;
+            font-weight: 400;
+            img {
+                width: 16px;
+                margin-right: 8px;
+            }
+            &:hover {
+                background-color: #3867d6;
+            }
+        }
+    }
+    &__info {
+        background-color: #3867d613;
+        padding: 12px 16px;
+        box-shadow: 0 3px 6px rgba(0,0,0,.085);
+        display: flex;
+        align-items: center;
+        span {
+            display: flex;      
+        }
+        img {
+            width: 40px;
+        }
+        p {
+            color: rgba(116, 117, 109, 0.774);
+            background-color: rgba(181, 235, 34, 0.15);
+            padding: 6px;
+            border-radius: 0px 6px 6px 0px;
+            font-weight: bold;
+            margin-left: 30px;
+            border-left: 4px solid #ffE01b;
+            padding-left: 10px;
+            line-height: 155%;
+            b {
+                color: #111
+            }
+        }
+    }
+    &__data-part {
+        overflow: scroll;
+        height: 100%;
+        padding: 20px 16px;
+        ul {
+            text-align: center;
+        }
+        li {
+            list-style: none;
+        }
+        .table-titles span {
+            color: #fff;
+            background-color: #3867d6 !important;
+            border: none !important;
+            font-weight: bold;
+        }
+        span {
+            text-align: left;
+            display: inline-block;
+            padding: 8px 12px;
+            width: 220px;
+            border: 1px solid #ccc;
+            color: #222;
+            &:nth-child(odd) {
+                background-color: #f7f7f7;
+            }
+            &:nth-child(even) {
+                background-color: #f1f1f1;
+            }
+        }
+    }
+}
